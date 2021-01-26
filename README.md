@@ -11,7 +11,9 @@ This was made as a simple replacement for JSONBox.io.
 - `npm install`
 - `node app.js`
 
-The app will start on port 3000.
+The app will start on port 3000. Make sure the port is part of the URL you send
+requests to. For example: a GET request to
+`http://localhost:3000/f5408a45-b4d0-4aee-8530-c2250481b131`
 
 ## Sending HTTP requests to this API
 
