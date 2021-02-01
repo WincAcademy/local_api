@@ -6,6 +6,7 @@ This was made as a simple replacement for JSONBox.io.
 
 ## Installation
 
+- make sure you're using node >= 14
 - git clone this repository
 - `cd local_api`
 - `npm install`
