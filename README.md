@@ -10,7 +10,7 @@ This was made as a simple replacement for JSONBox.io.
 - git clone this repository
 - `cd local_api`
 - `npm install`
-- `node app.js`
+- `npm start`
 
 The app will start on port 3000. Make sure the port is part of the URL you send
 requests to. For example: a GET request to
