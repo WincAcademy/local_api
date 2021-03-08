@@ -1,14 +1,19 @@
 // Imports
-const express = require("express");
-const { add, get, getAll, update, remove } = require("./db");
-const {
+
+// Migrating from CommonJS to ESM
+import express_pkg from "express";
+const { express } = express_pkg;
+
+import { add, get, getAll, update, remove } from "./db.js";
+import {
     OK,
     CREATED,
     NO_CONTENT,
     NOT_FOUND,
     UNSUPPORTED_MEDIA_TYPE,
-} = require("./http_statuses");
-const { v4: uuidv4 } = require("uuid");
+} from "./http_statuses.js";
+
+import { v4 as uuidv4 } from "uuid";
 
 // Utilities
 const generateUUID = () => uuidv4();
