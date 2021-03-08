@@ -1,9 +1,7 @@
 // Imports
 
 // Migrating from CommonJS to ESM
-import express_pkg from "express";
-const { express } = express_pkg;
-console.log(express);
+import express from "express";
 
 import { add, get, getAll, update, remove } from "./db.js";
 import {
