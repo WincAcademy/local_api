@@ -6,6 +6,16 @@ This was made as a simple replacement for JSONBox.io.
 
 ## Installation
 
+Before installing make sure you can clone Github repositories from your
+commandline (so `git clone git@github.com:WincAcademy/local_api.git`) The
+install process will try do this too. If your shell is not configured to do that
+yet you'll get an error like `Could not read from remote repository`.
+
+[More info on how to clone a repository using the command
+line.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-using-the-command-line)
+
+When you've done that take the following steps:
+
 - make sure you're using node >= 14
 - git clone this repository
 - `cd local_api`
