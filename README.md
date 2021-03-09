@@ -4,15 +4,30 @@ Use this to have a locally running REST API that accepts JSON.
 
 This was made as a simple replacement for JSONBox.io.
 
-## Installation
+## Pre-installation steps
 
-Before installing make sure you can clone Github repositories from your
-commandline (so `git clone git@github.com:WincAcademy/local_api.git`) The
-install process will try do this too. If your shell is not configured to do that
-yet you'll get an error like `Could not read from remote repository`.
+In the installation process your shell will try to run a certain command. This
+command needs to be able to clone repositories from Github using an SSH key.
+
+To check if you can already do this try to run the following command from your terminal:
+
+`git clone git@github.com:WincAcademy/local_api.git`
+
+If this works you can continue on to installation.
+
+If this does _not_ work you'll get an error like `Could not read from remote repository`. This means you need to take the following steps:
+
+1. [generate an SSH key pair](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
+2. [add your private key to your SSH agent](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+3. give your _public key_ [to Github](https://github.com/settings/keys)
+
+This command should now work:
+`git clone git@github.com:WincAcademy/local_api.git`
 
 [More info on how to clone a repository using the command
 line.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-using-the-command-line)
+
+## Installation
 
 When you've done that take the following steps:
 
