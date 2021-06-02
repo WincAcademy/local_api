@@ -11,7 +11,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@small-tech/jsdb": "github:small-tech/jsdb#20d7e54877627ed9f4cd61c82dc79b8b44061706",
+        "@small-tech/jsdb": "https://github.com/small-tech/jsdb/archive/refs/tags/2.0.1.tar.gz",
         "express": "^4.17.1",
         "uuid": "^8.3.2"
     },
