@@ -39,7 +39,7 @@ When you've done that take the following steps:
 
 The app will start on port 3000. Make sure the port is part of the URL you send
 requests to. For example: a GET request to
-`http://localhost:3000/f5408a45-b4d0-4aee-8530-c2250481b131`
+`http://localhost:3000/`
 
 ## Sending HTTP requests to this API
 
