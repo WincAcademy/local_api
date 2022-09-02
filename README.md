@@ -130,6 +130,6 @@ will be HTTP 204.
 
 If you want to start over:
 
-- stop the app
-- delete the files in `db/`
-- restart the app
+- stop the app by pressing `Control/Ctrl + C` in the terminal where you ran `npm start`
+- delete the files in `database/`
+- start the app
