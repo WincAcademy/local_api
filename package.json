@@ -11,7 +11,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@small-tech/jsdb": "github:small-tech/jsdb",
+        "@small-tech/jsdb": "git+https://codeberg.org/small-tech/jsdb.git",
         "express": "^4.17.1",
         "uuid": "^8.3.2"
     },
