@@ -1,52 +1,49 @@
 # Local REST API
 
-Use this to have a locally running REST API that accepts JSON.
+A simple Node.js application that exposes a locally running REST API using
+[jsdb](https://codeberg.org/small-tech/jsdb.git).
 
-This was made as a simple replacement for JSONBox.io.
+This application can be used as a minimal stand in for the backend of a website.
 
-## Pre-installation steps
+## Pre-installation checks
 
-In the installation process your shell will try to run a certain command. This
-command needs to be able to clone repositories from Github using an SSH key.
-
-To check if you can already do this try to run the following command from your terminal:
-
-`git clone git@github.com:WincAcademy/local_api.git`
-
-If this works you can continue on to installation.
-
-If this does _not_ work you'll get an error like `Could not read from remote repository`. This means you need to take the following steps:
-
-1. [generate an SSH key pair](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
-2. [add your private key to your SSH agent](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
-3. give your _public key_ [to Github](https://github.com/settings/keys)
-
-This command should now work:
-`git clone git@github.com:WincAcademy/local_api.git`
-
-[More info on how to clone a repository using the command
-line.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-using-the-command-line)
+Make sure you're using Node.js >= 14. You can check this by running `node -v` in
+your terminal. If you need to update Node.js use the same process you used to
+install it in the first place.
 
 ## Installation
 
-When you've done that take the following steps:
+Location: you should **not** change any code of this application, you can just
+start it and use it. This also means you should **not** add it to your version
+control (git).
 
-- make sure you're using node >= 14
-- git clone this repository
-- `cd local_api`
+Installation steps:
+
+- Download the repository with the "Code" and "Download ZIP" buttons.
+- Extract (unzip) the downloaded zip file into your preferred location.
+- In your terminal navigate inside the directory of this application and run
+  the following commands.
 - `npm install`
 - `npm start`
 
-The app will start on port 3000. Make sure the port is part of the URL you send
-requests to. For example: a GET request to
+The app should now start on port 3000.
+
+You can now send HTTP requests to this application. Make sure the port is part
+of the URL you send requests to. For example: a GET request to
 `http://localhost:3000/`
 
-## Sending HTTP requests to this API
+## Sending HTTP requests to this application
 
-You can send 4 kinds of HTTP requests to this app.
+You can send 4 kinds of HTTP requests to this app:
 
-All but the `delete` requests need to have the content-type header set to
-`application/json`.
+1. POST
+2. GET
+3. PUT
+4. DELETE
+
+Almost every request you send to the app needs to have a specific header: the
+`Content-type` header needs to have the value of `application-json`. The single
+exception is the `DELETE` request.
 
 ### POST
 
